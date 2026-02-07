@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story Ducks 🦆📚</title>
+
+<style>
+:root {
+    --primary: #ffcc00;
+    --secondary: #1f2933;
+    --accent: #00bcd4;
+    --bg: #f5f7fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--secondary);
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideDown 1s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 1.8em;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.hero h1 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* BOOK CARDS */
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.book {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.book h3 {
+    margin-bottom: 5px;
+}
+
+.book p {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.book button {
+    background: var(--accent);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.book button:hover {
+    background: #0097a7;
+}
+
+/* DEMO */
+.demo-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.demo-box select {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.demo-text {
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* ABOUT */
+.about {
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    border-radius: 25px;
+    padding: 40px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2933;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* ANIMATIONS */
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span>🦆</span> Story Ducks
+    </div>
+    <nav>
+        <a href="#about">Sobre</a>
+        <a href="#books">Livros</a>
+        <a href="#demo">Leitura Demo</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Histórias criadas por jovens autores</h1>
+    <p>Livros e mangás escritos por alunos do 6º ano, cheios de criatividade, aventura e imaginação.</p>
+</div>
+
+<section id="about">
+    <h2>📖 Nossa História</h2>
+    <div class="about">
+        <p>
+            A <strong>Story Ducks</strong> nasceu da imaginação de Heitor em 2018 hoje junto dos amigos de escola construiram o sonho de escrever e levar para o mundo sua histórias através da loja.
+            Aqui, cada história é escrita com diversão, aprendizado e sonhos.
+            Nosso mascote é um pato curioso, que adora ler, criar e explorar novos mundos!
+        </p>
+    </div>
+</section>
+
+<section id="books">
+    <h2>🛒 Nossos Livros & Mangás</h2>
+    <div class="books">
+        <div class="book">
+            <h3>egridom</h3>
+            <p>Autor: Bernardo Monteiro</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="book">
+            <h3>Os fanstamas</h3>
+            <p>Autor: Heitor</p>
+            <button>Comprar</button>
+        </div>
+
+
+        <div class="book">
+            <h3>Ame no vaki</h3>
+            <p>Autor: Otávio</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="book">
+            <h3>Super Detetives e o Sumiço de Cleiton</h3>
+            <p>Autor: Bernardo Monteiro</p>
+            <button>Comprar</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="demo">
+    <h2>📚 Leitura Demo</h2>
+    <div class="demo-box">
+        <select onchange="mostrarDemo(this.value)">
+            <option value="">Escolha um livro</option>
+            <option value="1">Egridom</option>
+            <option value="2">Os fanstamas</option>
+            <option value="3">ame no vaki</option>
+            <option value="4">Super Detetives e o sumiço de Cleiton</option>
+        </select>
+
+        <p class="demo-text" id="demoText"></p>
+    </div>
+</section>
+
+<footer>
+    🦆 Story Ducks © 2026 — Criado por Bernardo Monteiro
+</footer>
+
+<script>
+function mostrarDemo(valor) {
+    const demo = document.getElementById("demoText");
+    let texto = "";
+
+    if (valor === "1") texto = "estava so andando na floresta assombrada até que...";
+    if (valor === "2") texto = "foi comprada pra tirar os fanstama de uma casa...";
+    if (valor === "3") texto = "monstro invadam a cidade...";
+    if (valor === "4") texto = "Era uma vez uma dupla de detetives ,João e José ou mais conhecidos como JJ...";
+
+    demo.style.opacity = 0;
+    setTimeout(() => {
+        demo.innerText = texto;
+        demo.style.opacity = 1;
+    }, 300);
+}
+</script>
+
+</body>
+</html>
