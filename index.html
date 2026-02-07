@@ -1,4 +1,5 @@
-<<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -218,7 +219,7 @@ footer {
 
         <div class="book">
             <h3>Os fanstamas</h3>
-            <p>Autor: Heitor</p>
+            <p>Autor: Heitor Campedeli</p>
             <button>Comprar</button>
         </div>
 
@@ -232,6 +233,16 @@ footer {
         <div class="book">
             <h3>Super Detetives e o Sumiço de Cleiton</h3>
             <p>Autor: Bernardo Monteiro</p>
+            <button>Comprar</button>
+
+        <div class="book">
+            <h3>Super Tec Red</h3>
+            <p>Autor: Heitor Campedeli</p>
+            <button>Comprar</button>
+
+        <div class="book">
+            <h3> Giralindom</h3>
+            <p>Autor: Heitor Monteiro/p>
             <button>Comprar</button>
         </div>
 
@@ -247,6 +258,8 @@ footer {
             <option value="2">Os fanstamas</option>
             <option value="3">ame no vaki</option>
             <option value="4">Super Detetives e o sumiço de Cleiton</option>
+            <option value="5">Tec Red</option>
+            <option value="6">Giralindom</option>
         </select>
 
         <p class="demo-text" id="demoText"></p>
@@ -266,6 +279,8 @@ function mostrarDemo(valor) {
     if (valor === "2") texto = "foi comprada pra tirar os fanstama de uma casa...";
     if (valor === "3") texto = "monstro invadam a cidade...";
     if (valor === "4") texto = "Era uma vez uma dupla de detetives ,João e José ou mais conhecidos como JJ...";
+    if (valor === "5") texto = "Ganhei super poderes até que...";
+    if (valor === "6") texto = "fiquei cego e ganhei força...";
 
     demo.style.opacity = 0;
     setTimeout(() => {
@@ -277,5 +292,3 @@ function mostrarDemo(valor) {
 
 </body>
 </html>
-
-
